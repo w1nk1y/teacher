@@ -1,7 +1,7 @@
 interface StudentProps {
-    Studentid:string;
+    Studentid: string;
     StudentName: string;
     class: string;
     dateOfBirth: Date;
-  }
-export default StudentProps
+}
+export default StudentProps;

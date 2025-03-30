@@ -1,7 +1,7 @@
 interface HWProps {
-    HWid:string;
+    HWid: string;
     submissionDate: string;
     theme: string;
     customTheme: string;
-  }
-export default HWProps
+}
+export default HWProps;

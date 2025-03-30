@@ -1,5 +1,5 @@
 interface TeacherProps {
-  TeacherName: string;
-  avatarSrc: string;
+    TeacherName: string;
+    avatarSrc: string;
 }
-export default TeacherProps
+export default TeacherProps;
