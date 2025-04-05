@@ -1,3 +1,4 @@
+'use client'
 import { FC } from 'react';
 import { useRouter } from 'next/navigation';
 import { Avatar, AvatarFallback, AvatarImage } from '~/components/ui/avatar';
@@ -34,13 +35,13 @@ export const Header: FC<TeacherProps> = ({ TeacherName, avatarSrc }) => {
                     </button>
                     <button
                         className='px-2 py-1 transition-colors hover:text-primary'
-                        onClick={() => router.push('/HWgrade')}
+                        onClick={() => router.push('/HomeWorkMark')}
                     >
                         Расписание
                     </button>
                     <button
                         className='px-2 py-1 transition-colors hover:text-primary'
-                        onClick={() => router.push('/AddHW')}
+                        onClick={() => router.push('/HomeWorkAdd')}
                     >
                         Задания
                     </button>

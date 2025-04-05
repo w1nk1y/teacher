@@ -22,13 +22,13 @@ const Index: FC = () => {
                     <div className='flex flex-col gap-4 md:flex-row '>
                         <Button
                             onClick={() => router.push('/SignIn')}
-                            className='border-2 border-black rounded-lg bg-white px-8 py-3 hover:bg-teal-900 text-blue-600 font-bold'
+                            className='border-2 border-gray-700 rounded-lg bg-gray-200 px-8 py-3 hover:bg-gray-400 text-blue-600 font-bold'
                         >
                             Войти
                         </Button>
                         <Button
                             onClick={() => router.push('/SignUp')}
-                            className='border-2 border-black rounded-lg bg-white px-8 py-3 hover:bg-teal-900 text-blue-600 font-bold'
+                            className='border-2 border-gray-700 rounded-lg bg-gray-200 px-8 py-3 hover:bg-gray-400 text-blue-600 font-bold'
                         >
                             Зарегистрироваться
                         </Button>
