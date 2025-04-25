@@ -1,37 +1,49 @@
+import '~/styles/globals.css';
 import Link from "next/link";
+import {Button} from "~/components/ui/button";
+import Image from "next/image";
+import image1 from "~/shared/ui/image1.png";
+const Page = () => {
+    return (
+      <div className='flex min-h-screen items-center bg-blue-600 '>
+          <div className='mx-auto flex max-w-screen-xl flex-col gap-8 rounded-2xl  p-6 md:flex-row md:p-12'>
+              <div className='flex-1'>
+                  <h1 className='mb-6 text-5xl font-bold text-white'>Новый подход к образованию детей</h1>
+                  <p className='mb-8 text-lg text-white'>
+                      Наш сайт предоставляет возможности для сбора записей по предметам у учеников и их проверки. Это
+                      позволит вам экономить время при проверке конспектов и других работ и вести учёт выполненных
+                      домашних заданий. С помощью обратной связи вы с лёгкостью можете указать на недочёты, допущенные
+                      детьми в их работах, а также оценить их по привычной системе оценивания. Просто попробуйте!
+                  </p>
+                  <div className='flex flex-col gap-4 md:flex-row '>
 
-export default function HomePage() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
-        <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-          Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
-        </h1>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/usage/first-steps"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">First Steps →</h3>
-            <div className="text-lg">
-              Just the basics - Everything you need to know to set up your
-              database and authentication.
-            </div>
-          </Link>
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/introduction"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">Documentation →</h3>
-            <div className="text-lg">
-              Learn more about Create T3 App, the libraries it uses, and how to
-              deploy it.
-            </div>
-          </Link>
-        </div>
+                      <Link href='/auth/signup'>
+                          <Button className='border-2 border-gray-700 rounded-lg bg-gray-200 px-8 py-3 hover:bg-gray-400 text-blue-600 font-bold'>
+                              Войти
+                          </Button>
+                      </Link>
+
+                      <Link href='/auth/signup'>
+                          <Button className='border-2 border-gray-700 rounded-lg bg-gray-200 px-8 py-3 hover:bg-gray-400 text-blue-600 font-bold'>
+                              Зарегистрироваться
+                          </Button>
+                      </Link>
+
+                  </div>
+              </div>
+
+              <div className='flex flex-1 items-center justify-center'>
+                  <Image
+                    src={image1}
+                    alt='Образовательная платформа'
+                    width={500}
+                    height={300}
+                    className='h-auto w-full'
+                  />
+              </div>
+          </div>
       </div>
-    </main>
-  );
-}
+    );
+};
+
+export default Page;
